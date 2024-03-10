@@ -1,0 +1,62 @@
+/* Default styles for all screen sizes */
+.scanner-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.result-container {
+  margin-top: 20px;
+}
+
+.data {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.found {
+  color: green;
+}
+
+.not-found {
+  color: red;
+}
+
+.reset-button {
+  padding: 8px 16px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  background-color: #0056b3;
+}
+
+/* Your existing styles here */
+
+/* Media queries for mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .scanner-container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .data {
+    font-size: 16px;
+  }
+
+  .found,
+  .not-found {
+    font-size: 14px;
+  }
+
+  .reset-button {
+    width: 100%;
+  }
+}
